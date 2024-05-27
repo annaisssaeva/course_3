@@ -76,15 +76,12 @@ for line in stringg.split("\n"):
     ind+=1
     word=line.split(' — ')[0]
     num = line.split('=')[1]
-    #print(ind, word, num)
     words[word] = int(num)
-#print(words)
 word_compl=dict(sorted(words.items(), key=lambda item: item[1]))
-#print(word_compl)
 words_sorted = list(word_compl.keys())
-#print(words_sorted)
 
 
+#создание списка предложений
 stringg = '''Класс зашумел.
 Птицы живут в лесах.
 Рыболов поймал в реке щуку.
